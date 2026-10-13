@@ -1,0 +1,74 @@
+* {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared items */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    background-color: orangered
+    
+    ;
+}
+/* Header Section */
+
+/* Navbar section */
+.nav-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+.navlink-container{
+    gap: 1rem;
+}
+.nav-container ul li,a{
+    list-style-type: none;
+    text-decoration: none;
+     color: black; 
+    font-size: 20px;
+}
+.home a{
+    color: orange;
+}
+.nav-left{
+    gap: 1rem ; 
+}
+.phone{
+    gap: 10px;
+}
+.phone-icon{
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(to right, orangered,orange);
+    border-radius: 50%;
+}
+.phone-icon i{
+    padding: 10px;
+}
+.number{
+    font-weight: bold;
+}
+.register-btn{
+    background-color: orange;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.register-btn:hover{
+    background-color: blue;
+}
