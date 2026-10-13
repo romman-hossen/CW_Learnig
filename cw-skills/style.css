@@ -72,3 +72,30 @@
 .register-btn:hover{
     background-color: blue;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Section */
+@media screen and (max-width:576px) {
+    .nav-container, .navlink-container , .nav-left{
+        flex-direction: column;
+        padding: 0;
+    } 
+    .nav-left{
+        margin-top: 1rem;
+    }
+  
+
+
+
+    
+}
