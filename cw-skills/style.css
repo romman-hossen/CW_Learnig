@@ -1,5 +1,4 @@
 * {
-
     padding: 0;
     box-sizing: border-box;
     margin: 0;
@@ -25,8 +24,13 @@
     gap: 10px;
     justify-content: center;
     border-radius: 1rem;
+    display: block;
 
 } 
+.btn:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+}
 .course-btn{
      border: 1px solid rgba(104, 101, 101, 0.61);
      padding: 10px 30px;
@@ -38,9 +42,15 @@
 .course-btn:hover{
     background-color: rgba(0, 0, 0, 0.151);
 } 
-/* Header Section */
 
 /* Navbar section */
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.116);
+}
 .nav-container {
     padding: 10px;
     display: flex;
@@ -120,7 +130,7 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);;
     gap: 5px;
-    width: 350px;  
+    max-width: 350px;  
     padding: 10px 0px;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.541);
@@ -138,6 +148,10 @@
     align-items: center;
     justify-content: center;
 }
+h1{
+    font-size: 2rem;
+}
+
 .CW{
     color: orange;
     
@@ -188,7 +202,7 @@
     grid-template-columns: repeat(4,1fr);
     gap: 1rem;
     margin-top: 2rem;
-
+    margin-bottom: 2rem;
 }
 .course-card{
     display: flex;
@@ -200,7 +214,6 @@
     overflow: hidden;
     background-color: white;
     min-width: 0;
-    
 }
 
 .course-card:hover {
@@ -231,10 +244,22 @@
     padding: 10px;
     width: 100%;
 }
+.view{
+    display: flex;
+    justify-content: center;
+}
+.view-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Responsive Section */
 @media screen and (max-width:576px) {
-    .nav-container, .navlink-container , .nav-left{
+    nav{
+        position: static;
+    }
+    .nav-container, .navlink-container , .nav-left, .btn-container{
         flex-direction: column;
         padding: 0;
     } 
@@ -244,6 +269,17 @@
     }
     .nav-left{
         margin-top: 1rem;
+    }
+    .new-btn{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+   
+    
+    /* Course card section  */
+    .banner-container, .course-container{
+        grid-template-columns: repeat(1,1fr);
     }
     
 }
