@@ -254,6 +254,17 @@ h1{
     align-items: center;
 }
 
+.mentor{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+}
+.video-container{
+   width: 400px;
+}
+
 /* Responsive Section */
 @media screen and (max-width:576px) {
     nav{
