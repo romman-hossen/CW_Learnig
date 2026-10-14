@@ -26,7 +26,15 @@
     justify-content: center;
     border-radius: 1rem;
 
-}    
+} 
+.course-btn{
+     border: 1px solid rgba(104, 101, 101, 0.61);
+     padding: 10px 30px;
+     background-color: white;
+     border-radius: 50px;
+     font-weight: 600;
+
+}   
 /* Header Section */
 
 /* Navbar section */
@@ -135,6 +143,35 @@
     color: rgb(7, 7, 80);
 }
 
+/* Main section */
+.course-layout {
+    background-color: rgba(0, 102, 255, 0.116);
+    min-height: 500px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.course-info{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.info-heading{
+    background: linear-gradient(90deg, blue, fuchsia,#C21E56);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5em;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+.info-description{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(37, 35, 35);
+}
+.btn-container{
+    gap: 1rem;
+}
 
 
 
