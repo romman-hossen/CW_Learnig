@@ -17,7 +17,37 @@ const cart = [
   { name: "Keyboard", price: 500, quantity: 2 },
   { name: "Mouse", price: 300, quantity: 1 }
 ]; 
+function addProduct(cart,name,price,quantity){
+  const existingProduct = cart.find(item => item.name === name)
+  if(existingProduct){
+    existingProduct.quantity += quantity;
+  }
+  else{
+    cart.push({name,price,quantity})
+  }
+}
 
+function removeProduct(cart,name){
+ return cart.filter(item => item.name !== name)
+}
+
+function updateQuantity(cart,name,amount){
+  const product = cart.find(item => item.name === name);
+  if(product)
+  {
+    product.quantity += amount;
+    if(product.quantity > 0){
+      product.quantity = 0;
+       
+    }
+  }
+}
+function calculatePrice(cart){
+  const totalPrice = cart.reduce((total,item) => total+(item.price*item.amount),0)
+
+}
+
+ 
 
 // Expected calculations:
 
